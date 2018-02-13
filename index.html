@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/common/getContext.js"></script>
+    <script src="js/common/imgLoad.js"></script>
+    <script src="js/common/extend.js"></script>
+    <script src="js/Object.js"></script>
+    <script src="js/flappyBird.js"></script>
+    <script>
+        imgLoad({
+            sky: 'img/sky.png',
+            land: 'img/land.png',
+            bird: 'img/birds.png',
+            pipeDown: 'img/pipeDown.png',
+            pipeUp: 'img/pipeUp.png'
+        }, function (imgObj) {
+            flappyBird(imgObj);
+        });
+    </script>
+</body>
+
+</html>
